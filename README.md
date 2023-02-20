@@ -27,9 +27,14 @@ Open the settings.py and add to the list of to the installed apps
         'rest_framework',
         'BookListDRF',
 
+### Database setup¶
+run the following command:
 
-### Creating Models
+    python manage.py migrate
 
+Read more https://docs.djangoproject.com/en/4.1/intro/tutorial02/
+### Creating models¶
+![Alt text](models.PNG "a models")
 ### Views
 
 ### Pagination
