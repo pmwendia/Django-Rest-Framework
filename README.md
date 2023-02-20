@@ -106,3 +106,28 @@ open the BookListDRF/admin.py file, and edit it to look like this:
 Explore the free admin functionality¶
 
 ![Alt text](images/ad_min.PNG "a admin page")
+
+
+### Adding items 
+
+Open http://127.0.0.1:8000/ and add the following:
+
+    title = The Great Gatsby
+    author = Francis Scott Fitzgerald
+    price = 6.50
+and post.
+
+it should look like this:
+
+![Alt text](images/API.PNG "a admin page")
+
+### Testing
+If you do not have Insomnia installed, you can download it from https://insomnia.rest/download
+
+Open insomnia and create a new request which the HTTP GET method. Write the following URL in the URL field, http://127.0.0.1:8000. Now click the "Send button". You should see something like this:
+
+![Alt text](images/test.PNG "a test request")
+
+#### References
+1) https://www.django-rest-framework.org/tutorial/quickstart/
+
