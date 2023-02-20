@@ -105,7 +105,7 @@ open the BookListDRF/admin.py file, and edit it to look like this:
 
 Explore the free admin functionality¶
 
-![image](images/ad_min.PNG)
+![image](images/admin_app.PNG)
 
 
 ### Adding items 
