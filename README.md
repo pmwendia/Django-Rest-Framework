@@ -33,9 +33,76 @@ run the following command:
     python manage.py migrate
 
 Read more https://docs.djangoproject.com/en/4.1/intro/tutorial02/
-### Creating models¶
-![Alt text](models.PNG "a models")
 ### Views
+#### class-based views
+refer https://www.django-rest-framework.org/tutorial/3-class-based-views/
+Open the file BookListDRF/views.py and put the following Python code in it:
+
+![Alt text](images/views.PNG "a views.py")
 
 ### Pagination
-Create a urls.py in the app's directory
+Create a urls.py in the app's directory and add the following code:
+
+![Alt text](images/urls.PNG "a urls.py")
+
+modify BookList/urls.py to look like this:
+
+![Alt text](images/bkl-urls.PNG "a urls.py")
+
+### Creating models¶
+Edit the BookListDRF/models.py file so it looks like this:
+
+![Alt text](images/models.PNG "a models")
+
+Here, each model is represented by a class that subclasses django.db.models.Model.
+
+#### Activating models¶
+    python manage.py makemigrations
+
+    python manage.py migrate
+
+### Serialization
+read more https://www.django-rest-framework.org/tutorial/1-serialization/
+
+create a file BookListDRF/serializers.py and add the following code:
+
+![Alt text](images/serializers.PNG "a serializers")
+
+### Introducing the Django Admin¶
+Creating an admin user¶
+First you’ll need to create a user who can login to the admin site. Run the following command:
+
+    python manage.py createsuperuser
+
+Enter your desired username and press enter.
+
+    Username: admin
+
+You will then be prompted for your desired email address:
+
+    Email address: admin@example.com
+
+The final step is to enter your password. You will be asked to enter your password twice, the second time as a confirmation of the first.
+
+    Password: **********
+    Password (again): *********
+    Superuser created successfully.
+
+now run:
+
+    python manage.py runserver
+
+navigate to:
+
+    http://127.0.0.1:8000/admin/
+
+![Alt text](images/d-admin.PNG "a admin login")
+
+#### Make the poll app modifiable in the admin¶
+open the BookListDRF/admin.py file, and edit it to look like this:
+
+![Alt text](images/admin.PNG "a admin.py")
+
+Explore the free admin functionality¶
+
+![Alt text](images/ad_min.PNG "a admin page")
