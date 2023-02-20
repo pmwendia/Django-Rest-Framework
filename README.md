@@ -38,21 +38,21 @@ Read more https://docs.djangoproject.com/en/4.1/intro/tutorial02/
 refer https://www.django-rest-framework.org/tutorial/3-class-based-views/
 Open the file BookListDRF/views.py and put the following Python code in it:
 
-![Alt text](images/views.PNG "a views.py")
+![image](images/views.PNG)
 
 ### Pagination
 Create a urls.py in the app's directory and add the following code:
 
-![Alt text](images/urls.PNG "a urls.py")
+![image](images/urls.PNG)
 
 modify BookList/urls.py to look like this:
 
-![Alt text](images/bkl-urls.PNG "a urls.py")
+![image](images/bkl-urls.PNG)
 
 ### Creating models¶
 Edit the BookListDRF/models.py file so it looks like this:
 
-![Alt text](images/models.PNG "a models")
+![image](images/models.PNG)
 
 Here, each model is represented by a class that subclasses django.db.models.Model.
 
@@ -66,7 +66,7 @@ read more https://www.django-rest-framework.org/tutorial/1-serialization/
 
 create a file BookListDRF/serializers.py and add the following code:
 
-![Alt text](images/serializers.PNG "a serializers")
+![image](images/serializers.PNG)
 
 ### Introducing the Django Admin¶
 Creating an admin user¶
@@ -96,16 +96,16 @@ navigate to:
 
     http://127.0.0.1:8000/admin/
 
-![Alt text](images/d-admin.PNG "a admin login")
+![image](images/d-admin.PNG)
 
 #### Make the poll app modifiable in the admin¶
 open the BookListDRF/admin.py file, and edit it to look like this:
 
-![Alt text](images/admin.PNG "a admin.py")
+![image](images/admin.PNG)
 
 Explore the free admin functionality¶
 
-![Alt text](images/ad_min.PNG "a admin page")
+![image](images/ad_min.PNG)
 
 
 ### Adding items 
@@ -119,14 +119,14 @@ and post.
 
 it should look like this:
 
-![Alt text](images/API.PNG "a admin page")
+![image](images/API.PNG)
 
 ### Testing
 If you do not have Insomnia installed, you can download it from https://insomnia.rest/download
 
 Open insomnia and create a new request which the HTTP GET method. Write the following URL in the URL field, http://127.0.0.1:8000. Now click the "Send button". You should see something like this:
 
-![Alt text](images/test.PNG "a test request")
+![image](images/test.PNG)
 
 #### References
 1) https://www.django-rest-framework.org/tutorial/quickstart/
