@@ -4,7 +4,7 @@
 open cmd on windows and type the following commands respectively:
 
     mkdir Django-Rest-Framework && cd Django-Rest-Framework
-
+    
     pip install pipenv
 
     pipenv shell      # this command creates a virtual environment for the project
@@ -21,3 +21,16 @@ open cmd on windows and type the following commands respectively:
     
 refer to https://docs.djangoproject.com/en/4.1/intro/tutorial01/
     
+### configurations
+Open the settings.py and add to the list of to the installed apps 
+        
+        'rest_framework',
+        'BookListDRF',
+
+
+### Creating Models
+
+### Views
+
+### Pagination
+Create a urls.py in the app's directory
